@@ -1,0 +1,53 @@
+WindowManager:
+    MainWindow:
+    ScoreWindow:
+<MainWindow>:
+    name: "main"
+    GridLayout:
+        cols: 1
+        Button:
+            text: "Quick Score"
+            on_release:
+                app.root.current = "score"
+                root.manager.transition.direction = "left"
+<ScoreWindow>:
+    name: "score"
+    GridLayout:
+        cols: 7
+        Button:
+            name: "three"
+            text: "Press to Update"
+            on_release:
+                three.text = "Updated"
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: "Score"
+            on_release:
+                app.root.current = "main"
+                root.manager.transition.direction = "right"
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: ""
+        Button:
+            text: "Go Back"
+            on_release:
+                app.root.current = "main"
+                root.manager.transition.direction = "right"
