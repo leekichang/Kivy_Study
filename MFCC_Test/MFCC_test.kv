@@ -1,0 +1,17 @@
+<MyLayout>
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            id: result
+            text: "Elapsed Time will be shown here"
+            font_size: 32
+
+        Button:
+            size_hint: (1, .5)
+            font_size: 32
+            text: "Run MFCC"
+            on_press: root.press()
+    
